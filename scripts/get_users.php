@@ -23,7 +23,6 @@ function get_users() {
                 . '<td>' . $user['created_at'] . '</td>'
                 . '<td><input type="checkbox" id="is_active" name="is_active"' . $is_active . '></td>'
                 . '<td><input type="checkbox" id="is_administrator" name="is_administrator"' . $is_administrator . '></td>'
-                . '<td><button type="submit" class="btn-details"><a href="#">Ver</a></button></td>'
                 . '<td><button type="submit" class="btn-edit"><a href="#">Editar</a></button></td>'
                 . '<td><button type="submit" class="btn-cancel"><a href="#">Eliminar</a></button></td>'
                 . '</tr>';

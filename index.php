@@ -21,7 +21,6 @@ include('templates\header.php');
             <th>Administrador</th>
             <th></th>
             <th></th>
-            <th></th>
         </thead>
         <tbody>
             <?php get_users(); ?>
