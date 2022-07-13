@@ -39,8 +39,11 @@ function add_user() {
             $query = "INSERT INTO users (name, owner_id, created_at, is_active, is_adminitrator)" 
                         . "VALUES(:" . implode(", :", array_keys($user)) . ")";
             
-            if ($sentence = $connection->prepare($query)->execute($user)) {
-                $connection = null;
+            $statement = $connection->prepare($query);
+
+            if ($statement->execute($user)) {
+                header('Location: ../index.php');
+                die();
             }
     
         } catch (Exception $ex) {
